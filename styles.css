@@ -17,6 +17,12 @@ header {
   border-bottom: 2px solid #048eaa;
 }
 
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 .logo {
   width: 60px;
   height: 0 auto;
