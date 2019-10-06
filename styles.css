@@ -8,8 +8,8 @@ body {
 
 /* Content of the nav bar */
 .container1 {
-  width: 80%
-  margin: 0 auto;
+  width: 100%
+  margin: 0;
 }
 
 header {
@@ -24,25 +24,22 @@ header::after {
 }
 
 .logo {
-  width: 60px;
-  height: 0 auto;
+  width: 57px;
   float: left;
+  padding: 10px 23px;
 }
 
 nav {
   float: right;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 nav li {
   display: inline-block;
-  margin-left: 35px;
+  margin-left: 30px;
+  margin-left: 15px;
+  padding: 10px;
 }
+
 /* conetents of the top section below nav bar */
 .container2 {
   background-image: url("images/park.jpg");
