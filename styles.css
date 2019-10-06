@@ -4,6 +4,7 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+  
 }
 
 /* Content of the nav bar */
@@ -14,7 +15,7 @@ body {
 
 header {
   background-color: #75e2e6;
-  border-bottom: 2px solid #048eaa;
+  border-bottom: 2.5px solid #048eaa;
 }
 
 header::after {
@@ -31,13 +32,18 @@ header::after {
 
 nav {
   float: right;
+  padding-right: 23px;
 }
 
 nav li {
   display: inline-block;
   margin-left: 30px;
-  margin-left: 15px;
-  padding: 10px;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
 }
 
 /* conetents of the top section below nav bar */
