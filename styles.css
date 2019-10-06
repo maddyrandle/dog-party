@@ -41,6 +41,7 @@ nav ul {
 
 nav li {
   display: inline-block;
+  margin-left: 35px;
 }
 /* conetents of the top section below nav bar */
 .container2 {
