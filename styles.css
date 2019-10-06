@@ -4,7 +4,7 @@
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-  
+  background-color: #ffffff;
 }
 
 /* Content of the nav bar */
@@ -27,12 +27,12 @@ header::after {
 .logo {
   width: 57px;
   float: left;
-  padding: 10px 23px;
+  padding: 10px 25px;
 }
 
 nav {
   float: right;
-  padding-right: 23px;
+  padding-right: 25px;
 }
 
 nav li {
@@ -44,6 +44,8 @@ nav li {
 nav a {
   color: #000000;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 /* conetents of the top section below nav bar */
