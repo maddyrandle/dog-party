@@ -1,5 +1,3 @@
-
-
 /* This applies to everything on the page */
 body {
   margin: 0;
@@ -35,6 +33,12 @@ nav {
   padding-right: 25px;
 }
 
+ul {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 nav li {
   display: inline-block;
   margin-left: 30px;
@@ -45,17 +49,20 @@ nav a {
   color: #000000;
   text-decoration: none;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 21px;
+
 }
 
 nav a:hover {
   color: #ffffff;
+  cursor:
 }
 
 /* conetents of the top section below nav bar */
 .container2 {
   background-image: url("images/park.jpg");
   background-repeat: no-repeat;
+  background-origin: border-box;
 }
 
 .dog {
@@ -63,61 +70,87 @@ nav a:hover {
   border: 4px solid #048eaa;
   height: 225px;
   width: 225px;
+
 }
 
 h1 {
   font-weight: 400;
   color: #ffffff;
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+  font-size: 40px;
 }
 
 span {
   font-weight: 800;
 }
 
+p#name {
+  display: block;
+  margin-left: 33.3%;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  color: #ffffff;
+  font-size: 20px;
+
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  margin-left: 33.3%;
+  height: 60px;
+  width: 33.3%;
+  padding: 0;
+  border-radius: 2px;
+  border: 0;
+}
 /* second section containing the How, What, and Facts info */
 .container3 {
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
-.how {
 
-}
 
-.how img {
+.images {
   border-radius: 50%;
   border: 4px solid #048eaa;
   height: 230px;
   width: 230px;
+}
+
+p.blocktext {
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .button1 {
   background-color: #75e2e6;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 2px;
+  border: 0;
+  width: 33.3%;
+  margin-left: 33.3%;
+  margin-top: 20px;
+  display: block;
+  height: 60px;
+  padding: 0;
 }
 
-.what {
-
-}
-
-.what img {
-  border-radius: 50%;
-  border: 4px solid #048eaa;
-  height: 230px;
-  width: 230px;
-}
-
-.facts {
-
-}
-
-.facts img {
-  border-radius: 50%;
-  border: 4px solid #048eaa;
-  height: 230px;
-  width: 230px;
-}
 
 .button {
   background-color: #048eaa;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 2px;
+  width: 350px;
+  margin: 10px 50px;
 }
 
 footer {
