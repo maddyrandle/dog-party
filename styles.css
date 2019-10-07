@@ -131,10 +131,8 @@ input {
 
 .container3 {
   background-color: #ffffff;
-  box-sizing: border-box;
+
 }
-
-
 
 .images {
   border-radius: 50%;
@@ -144,14 +142,16 @@ input {
 }
 
 p.blocktext {
-  margin-left: auto;
-  margin-right: auto;
+  width: 33.3%;
+  text-align: justify;
+  display: block;
 
 }
 
 
 .button {
   background-color: #048eaa;
+  color: #ffffff;
   font-size: 18px;
   padding: 15px;
   border-radius: 2px;
@@ -162,6 +162,7 @@ p.blocktext {
 
 footer {
   background-color: #048eaa;
+  padding-bottom: 40px;
 }
 
 h5 {
@@ -170,6 +171,10 @@ h5 {
   font-size: 16px;
   text-align: center;
   margin: 0;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 25px;
+}
+
+address {
+  text-align: center;
 }
