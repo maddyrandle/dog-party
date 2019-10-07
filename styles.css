@@ -62,7 +62,10 @@ nav a:hover {
 .container2 {
   background-image: url("images/park.jpg");
   background-repeat: no-repeat;
-  background-origin: border-box;
+  padding: 0;
+  margin: 0;
+
+
 }
 
 .dog {
@@ -147,8 +150,6 @@ p.blocktext {
 }
 
 
-
-
 .button {
   background-color: #048eaa;
   font-size: 18px;
@@ -157,7 +158,18 @@ p.blocktext {
   width: 350px;
   margin: 10px 50px;
 }
+/* contents of the footer */
 
 footer {
   background-color: #048eaa;
+}
+
+h5 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
