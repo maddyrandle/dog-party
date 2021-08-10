@@ -1,93 +1,121 @@
 /* This applies to everything on the page */
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  margin: 0;
+  display: grid;
   font-family: 'Open Sans', sans-serif;
-  background-color: #ffffff;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 1fr 124px;
+  grid-template-areas:
+    "header header header"
+    "section1 section1 section1"
+    "how what facts"
+    "footer footer footer";
 }
 
-/* Content of the nav bar */
-.container1 {
-  width: 100%;
-  margin: 0;
-}
-
-header {
+.header {
   background-color: #75e2e6;
-  border-bottom: 2.5px solid #048eaa;
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  border-bottom: 2px solid #048EAA;
 }
-
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
 .logo {
-  width: 57px;
-  float: left;
-  padding: 10px 25px;
+  height: 48px;
 }
 
-nav {
-  float: right;
-  padding-right: 25px;
+.nav {
+  display: flex;
+  list-style: none;
 }
 
-ul {
-  margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.navItem {
+  padding-left: 40px;
+  font-size: 18px;
 }
 
-nav li {
-  display: inline-block;
-  margin-left: 30px;
-  padding: 10px 0;
-}
-
-nav a {
-  color: #000000;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 21px;
-
-}
-
-nav a:hover {
-  color: #ffffff;
+.navItem:hover {
   cursor: pointer;
 }
 
-/* conetents of the top section below nav bar */
-.container2 {
+.section1 {
+  color: #FFFFFF;
+  grid-area: section1;
   background-image: url("images/park.jpg");
   background-repeat: no-repeat;
-  padding: 0;
-  margin: 0;
-
-
+  height: 750px;
+  background-size: cover;
+  background-position-y: 75%;
 }
 
-.dog {
-  border-radius: 50%;
-  border: 4px solid #048eaa;
-  height: 225px;
-  width: 225px;
-  margin-left: 40%;
+.overlay {
+  background: rgba(0, 0, 0, 0.35);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
 }
-
 h1 {
-  font-weight: 400;
-  color: #ffffff;
-  margin: 0;
-  padding: 30px;
   text-align: center;
-  font-size: 40px;
+}
+span {
+  font-weight: 300;
 }
 
-span {
-  font-weight: 800;
+.dogImage {
+  border: 4px solid #048EAA;
+  border-radius: 50%;
+  align-self: center;
+  height: 232px;
+}
+
+.how,
+.what,
+.facts {
+  text-align: center;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.how p,
+.what p,
+.facts p {
+  height: 24%;
+}
+
+.footer {
+  background-color: #048EAA;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.footer p {
+  text-align: center;
+  width: 16%;
+}
+.socialIcons {
+  display: flex;
+  justify-content: space-around;
+  width: 16%;
+}
+
+.sectionImage {
+  border-radius: 50%;
+  border: 4px solid #048EAA;
+  height: 224px;
+  width: 224px;
 }
 
 p#name {
@@ -100,38 +128,43 @@ p#name {
 
 }
 
+form {
+  display: flex;
+  justify-content: center;
+}
+
 fieldset {
-  border: none;
+   border: none;
+  width: 33.3%;
+
 }
 
 input {
-  margin-left: 33.3%;
   height: 60px;
-  width: 33.3%;
+  width: 100%;
   padding: 0;
-  border-radius: 2px;
-  border: 0;
+  border: none;
 }
 
-.button1 {
+.nameDogButton,
+button {
+  color: #000000;
   background-color: #75e2e6;
   font-size: 20px;
-  font-weight: 400;
-  border-radius: 2px;
-  border: 0;
-  width: 33.3%;
-  margin-left: 33.3%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: block;
+  border: none;
+  width: 100%;
   height: 60px;
-  padding: 0;
+  margin-top: 24px;
 }
-/* second section containing the How, What, and Facts info */
 
-.container3 {
-  background-color: #ffffff;
+button {
+  background-color: #048eaa;
+  color: #FFFFFF;
+  width: 88%;
+}
 
+button:hover {
+  cursor: pointer;
 }
 
 .images {
@@ -142,39 +175,9 @@ input {
 }
 
 p.blocktext {
-  width: 33.3%;
+  width: 88%;
   text-align: justify;
-  display: block;
+  /* display: block; */
+  font-size: 20px;
 
-}
-
-
-.button {
-  background-color: #048eaa;
-  color: #ffffff;
-  font-size: 18px;
-  padding: 15px;
-  border-radius: 2px;
-  width: 350px;
-  margin: 10px 50px;
-}
-/* contents of the footer */
-
-footer {
-  background-color: #048eaa;
-  padding-bottom: 40px;
-}
-
-h5 {
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-  margin: 0;
-  padding-top: 40px;
-  padding-bottom: 25px;
-}
-
-address {
-  text-align: center;
 }
