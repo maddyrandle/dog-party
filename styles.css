@@ -7,7 +7,7 @@ body {
 
 /* Content of the nav bar */
 .container1 {
-  width: 100%
+  width: 100%;
   margin: 0;
 }
 
@@ -55,7 +55,7 @@ nav a {
 
 nav a:hover {
   color: #ffffff;
-  cursor:
+  cursor: pointer;
 }
 
 /* conetents of the top section below nav bar */
